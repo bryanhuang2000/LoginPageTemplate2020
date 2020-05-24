@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            .container {
+                margin-top: 5%;
+            }
+            .form-outer {
+                width: 600px;
+                height: 400px;
+                background-color: cyan;
+                box-shadow: 5px 5px;
+            }
+            .login {
+                font-size: 45px;
+            }
+            .login-form {
+                width: 500px;
+                height: 300px;
+                background-color: white;
+            }
+            .labels {
+                margin-top: 20%;
+                text-align: left;
+                text-indent: 10%;
+                font-size: 20px;
+            }
+            .inputs {
+                font-size: 20px;
+            }
+            .labels, .inputs {
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .submit {
+                margin-top: 10px;
+            }
+            .submit input {
+                width: 100px;
+                height: 30px;
+                font-size: 20px;
+            }
+            .forgot-passwd, .no-acc {
+                margin-top: 3%;
+            }
+            .forgot-passwd a, .no-acc a {
+                text-decoration: none;
+            }
+        </style>
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container" align="center">
+            <div class="form-outer" align="center">
+                <div class="login">
+                    Login
+                </div>
+                <form class="login-form" method="get" action="get.php">
+                    <div class="labels">
+                        <div class="email-label">
+                            Email
+                        </div>
+                        <br>
+                        <div class="passwd-label">
+                            Password
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="email">
+                            <input type="email" name="email" value="" placeholder="Email" required>
+                        </div>
+                        <br>
+                        <div class="passwd">
+                            <input type="password" name="passwd" value="" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="forgot-passwd">
+                        Forgot password? Reset<a href="recovery.html"> here</a>.
+                    </div>
+                    <div class="no-acc">
+                        Don't have an account? Register<a href="register.html"> here</a>.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
